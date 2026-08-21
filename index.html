@@ -3,12 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animales en peligro de exticion</title>
+    <meta name="description" content="Explora animales en peligro de extinción y encuentra una especie por su nombre.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="script.js" defer></script>
+    <title>Fauna en alerta | Animales en peligro</title>
 </head>
 <body>
-    
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Fauna en alerta, inicio">
+            <span class="brand-mark" aria-hidden="true">✦</span>
+            <span>Fauna <em>en alerta</em></span>
+        </a>
+        <p class="header-note">Catálogo de especies</p>
+    </header>
+
+    <main>
+        <section class="intro" aria-labelledby="page-title">
+            <p class="eyebrow">Conocer es proteger</p>
+            <h1 id="page-title">Animales que<br><span>necesitan atención.</span></h1>
+            <p class="intro-copy">Explora algunas de las especies más amenazadas del planeta. Busca una especie para descubrirla.</p>
+        </section>
+
+        <section class="catalog" aria-labelledby="catalog-title">
+            <div class="catalog-heading">
+                <div>
+                    <p class="eyebrow">Explorador de especies</p>
+                    <h2 id="catalog-title">Encuentra un animal</h2>
+                </div>
+                <span class="result-count" id="result-count" aria-live="polite">3 especies</span>
+            </div>
+
+            <label class="search-box" for="search-input">
+                <span class="search-icon" aria-hidden="true">⌕</span>
+                <span class="sr-only">Buscar por nombre</span>
+                <input id="search-input" type="search" placeholder="Escribe el nombre de una especie..." autocomplete="off">
+                <kbd>/</kbd>
+            </label>
+
+            <div class="animal-grid" id="animal-list">
+                <button class="animal-card card-coral" type="button" data-animal="Ajolote" data-raza="Ajolote">
+                    <span class="animal-number">01</span><span class="animal-name">Ajolote</span><span class="animal-type">Anfibio</span><span class="animal-status">En peligro crítico</span><span class="animal-description">Animal acuático mexicano que puede regenerar partes de su cuerpo.</span>
+                </button>
+                <button class="animal-card card-sage" type="button" data-animal="Oso polar" data-raza="Oso polar">
+                    <span class="animal-number">02</span><span class="animal-name">Oso polar</span><span class="animal-type">Mamífero</span><span class="animal-status">Vulnerable</span><span class="animal-description">Mamífero del Ártico que depende del hielo marino para sobrevivir.</span>
+                </button>
+                <button class="animal-card card-gold" type="button" data-animal="Vaquita marina" data-raza="Vaquita marina">
+                    <span class="animal-number">03</span><span class="animal-name">Vaquita marina</span><span class="animal-type">Mamífero marino</span><span class="animal-status">En peligro crítico</span><span class="animal-description">Pequeño cetáceo que vive únicamente en el norte del golfo de California.</span>
+                </button>
+            </div>
+            <p class="empty-state" id="empty-state" hidden>No encontramos especies con ese nombre.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer"><span>FAUNA EN ALERTA</span><span>La conservación comienza con la curiosidad.</span></footer>
 </body>
-<footer>
-    
-</footer>
 </html>
