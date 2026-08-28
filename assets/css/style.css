@@ -1,214 +1,107 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	padding: 0 20px;
-	color: #222;
-	background: #f4f1e8;
-	font-family: Arial, sans-serif;
-	line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f1e8;
+    font-family: Arial, sans-serif;
+    color: #222;
 }
 
-.site-header,
-main,
-.site-footer {
-	max-width: 900px;
-	margin: 0 auto;
+header {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
 }
 
-.site-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 25px 0;
-	border-bottom: 1px solid #ccc;
+header h1 {
+    color: #d9573f;
+    margin-bottom: 5px;
 }
 
-.brand {
-	color: #222;
-	font-weight: bold;
-	text-decoration: none;
-	text-transform: uppercase;
+header p {
+    color: #666;
 }
 
-.brand em,
-h1 span {
-	color: #d9573f;
+main {
+    max-width: 900px;
+    margin: auto;
 }
 
-.brand-mark {
-	margin-right: 8px;
+.inicio {
+    padding: 60px 0;
 }
 
-.header-note,
-.result-count {
-	color: #666;
-	font-size: 14px;
+.inicio h2 {
+    font-size: 40px;
 }
 
-.intro {
-	padding: 70px 0;
+.inicio p {
+    color: #666;
+    font-size: 17px;
+    max-width: 500px;
 }
 
-.eyebrow {
-	margin-bottom: 10px;
-	color: #d9573f;
-	font-size: 13px;
-	font-weight: bold;
-	text-transform: uppercase;
+.catalogo {
+    border-top: 1px solid #ccc;
+    padding: 40px 0;
 }
 
-h1,
-h2 {
-	margin-top: 0;
+#buscador {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #aaa;
+    font-size: 16px;
 }
 
-h1 {
-	font-size: 52px;
-	line-height: 1.1;
+#contador {
+    color: #666;
 }
 
-.intro-copy {
-	max-width: 500px;
-	color: #666;
-	font-size: 17px;
+.animales {
+    display: grid;
+    gap: 15px;
 }
 
-.catalog {
-	padding: 40px 0 80px;
-	border-top: 1px solid #ccc;
+.animal {
+    padding: 20px;
+    background-color: white;
+    border-left: 6px solid #d9573f;
+    border-radius: 5px;
 }
 
-.catalog-heading {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 25px;
+.animal h3 {
+    font-size: 25px;
+    margin-top: 0;
 }
 
-.search-box {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	margin-bottom: 30px;
-	padding: 12px;
-	border: 1px solid #aaa;
-	background: white;
+.animal p {
+    color: #555;
 }
 
-.search-icon {
-	color: #d9573f;
-	font-size: 24px;
+.oso {
+    border-left-color: #6f9c78;
 }
 
-input {
-	width: 100%;
-	padding: 5px;
-	border: 0;
-	outline: 0;
-	background: transparent;
-	font-size: 16px;
+.vaquita {
+    border-left-color: #c38d25;
 }
 
-kbd {
-	padding: 3px 7px;
-	border: 1px solid #ccc;
-	color: #666;
+#mensaje {
+    text-align: center;
+    color: #666;
+    margin-top: 25px;
 }
 
-.animal-grid {
-	display: grid;
-	gap: 18px;
-}
-
-.animal-card {
-	padding: 25px;
-	border: 1px solid #ccc;
-	border-left: 6px solid #d9573f;
-	color: #222;
-	background: white;
-	cursor: pointer;
-	text-align: left;
-}
-
-.animal-card:hover,
-.animal-card:focus {
-	background: #fffaf5;
-}
-
-.animal-card[hidden] {
-	display: none;
-}
-
-.card-sage {
-	border-left-color: #6f9c78;
-}
-
-.card-gold {
-	border-left-color: #c38d25;
-}
-
-.animal-number,
-.animal-status {
-	color: #666;
-	font-size: 12px;
-}
-
-.animal-name {
-	display: block;
-	margin: 8px 0 3px;
-	font-size: 25px;
-	font-weight: bold;
-}
-
-.animal-type {
-	color: #666;
-	font-size: 14px;
-}
-
-.animal-description {
-	margin: 15px 0 0;
-	color: #555;
-}
-
-.empty-state {
-	color: #666;
-	text-align: center;
-}
-
-.site-footer {
-	padding: 20px 0;
-	border-top: 1px solid #ccc;
-	color: #666;
-	font-size: 13px;
-}
-
-.sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-}
-
-@media (max-width: 600px) {
-	.header-note {
-		display: none;
-	}
-
-	.intro {
-		padding: 45px 0;
-	}
-
-	h1 {
-		font-size: 40px;
-	}
-
-	.catalog-heading,
-	.site-footer {
-		align-items: flex-start;
-		flex-direction: column;
-		gap: 10px;
-	}
+footer {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    color: #666;
+    font-size: 13px;
 }
